@@ -1,0 +1,87 @@
+\documentclass[11.5pt,sans,english]{beamer}
+\usepackage{scalerel}
+\usetheme{Luebeck}
+\usecolortheme{crane}
+
+\title[ Short title]{Long title}
+\author[Short name]{Long name}
+\date[2023]{2023}
+
+\usepackage[most]{tcolorbox}
+\usepackage{array,booktabs,xcolor,colortbl,multirow,rotating,amssymb}
+\usepackage{verbatim}
+\newcommand{\dfinger}{\large{\textcolor{black}{\ding{43}}}\scriptsize}
+
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame} 
+
+\section{Info}
+
+\begin{frame}
+\frametitle{Info} 
+\normalsize
+\begin{itemize}
+\item Using TestBeamAna package and cafs.\\[3ex]
+\item The deltas are the difference between vertex direction using BPF (detector) and using WC (beamline).\\[3ex]
+\item Plots labelled Proton\_P2 mean I have used the Proton hypothesis and the kProton cut, and this is Period 2 data.\\[3ex]
+\item Plots labelled ProtonNC\_P2 mean I have used the Proton hypothesis and the kNoCut cut, and this is Period 2 data.\\[3ex]
+\end{itemize}
+\end{frame} 
+
+\section{Plots }
+
+\begin{frame}{Plots: difference in x-dir detector minus beamline}
+\includegraphics[scale=0.17]{dX-Proton-P2}
+\includegraphics[scale=0.17]{dX-Proton-P3}
+\includegraphics[scale=0.17]{dX-Proton-P4}
+
+\includegraphics[scale=0.17]{dX-PiMu-P2}
+\includegraphics[scale=0.17]{dX-PiMu-P3}
+\includegraphics[scale=0.17]{dX-PiMu-P4}
+
+\end{frame}
+
+\begin{frame}{Plots: difference in y-dir detector minus beamline}
+\includegraphics[scale=0.17]{dY-Proton-P2}
+\includegraphics[scale=0.17]{dY-Proton-P3}
+\includegraphics[scale=0.17]{dY-Proton-P4}
+
+\includegraphics[scale=0.17]{dY-PiMu-P2}
+\includegraphics[scale=0.17]{dY-PiMu-P3}
+\includegraphics[scale=0.17]{dY-PiMu-P4}
+
+\end{frame}
+
+\begin{frame}{Plots: difference in x-dir NoCut}
+Fits are a joke but handy for comparing the Proton v PiMu hypothesis - to be understood.\\
+
+\includegraphics[scale=0.17]{dX-Proton-NoCut-P2}
+\includegraphics[scale=0.17]{dX-Proton-NoCut-P3}
+\includegraphics[scale=0.17]{dX-Proton-NoCut-P4}
+
+\includegraphics[scale=0.17]{dX-PiMu-NoCut-P2}
+\includegraphics[scale=0.17]{dX-PiMu-NoCut-P3}
+\includegraphics[scale=0.17]{dX-PiMu-NoCut-P4}
+
+\end{frame}
+
+ \begin{frame}{Plots: difference in y-dir NoCut}
+Fits are a joke but handy for comparing the Proton v PiMu hypothesis - to be understood.\\
+
+\includegraphics[scale=0.17]{dY-Proton-NoCut-P2}
+\includegraphics[scale=0.17]{dY-Proton-NoCut-P3}
+\includegraphics[scale=0.17]{dY-Proton-NoCut-P4}
+
+\includegraphics[scale=0.17]{dY-PiMu-NoCut-P2}
+\includegraphics[scale=0.17]{dY-PiMu-NoCut-P3}
+\includegraphics[scale=0.17]{dY-PiMu-NoCut-P4}
+
+\end{frame}
+
+
+
+\end{document}
